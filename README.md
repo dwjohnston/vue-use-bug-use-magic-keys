@@ -1,5 +1,20 @@
-# Vue 3 + TypeScript + Vite
+Reproduction for this issue
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+https://github.com/vueuse/vueuse/issues/5148
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+
+instructions
+
+```
+npm i
+npm run dev
+```
+
+
+Open the browser, open dev tools. Click the button. Observe the error 
+
+```
+@vueuse_core.js?v=711c851c:5297 Uncaught TypeError: Cannot read properties of undefined (reading 'toUpperCase')
+    at emitEmptyKeyboardEvent (App.vue:9:10)
+
+```
